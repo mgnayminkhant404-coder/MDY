@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ဘဒ္ဒန္တခေမိယ ၏ ကိုယ်ရေးရာဇဝင်အကျဉ်း</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pyidaungsu:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Pyidaungsu', serif;
+            background-color: #fcfaf2; /* အသားရောင်နုနု - အေးချမ်းသောခံစားချက် */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .profile-card {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            max-width: 700px;
+            width: 100%;
+            border-top: 8px solid #d4af37; /* ရွှေရောင် အပေါ်ဘောင် */
+            position: relative;
+        }
+
+        /* ဘေးဘောင်အလှ */
+        .profile-card::before {
+            content: "";
+            position: absolute;
+            top: 10px; left: 10px; right: 10px; bottom: 10px;
+            border: 1px solid #f0e6cc;
+            pointer-events: none;
+        }
+
+        h2 {
+            text-align: center;
+            color: #4a0e0e; /* အနီရင့်ရောင် - သာသနာရေးဆန်သောအရောင် */
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        h2::after {
+            content: "✨";
+            display: block;
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+        .info-section {
+            position: relative;
+            z-index: 2;
+        }
+
+        .info-row {
+            display: flex;
+            border-bottom: 1px solid #f0f0f0;
+            padding: 12px 0;
+            transition: background 0.3s;
+        }
+
+        .info-row:last-child {
+            border-bottom: none;
+        }
+
+        .info-row:hover {
+            background-color: #fffdf5;
+        }
+
+        .label {
+            width: 200px;
+            font-weight: 700;
+            color: #5d4037;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        .label::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #d4af37;
+        }
+
+        .value {
+            flex: 1;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        @media (max-width: 550px) {
+            .info-row {
+                flex-direction: column;
+            }
+            .label {
+                width: 100%;
+                color: #d4af37;
+                padding-left: 0;
+            }
+            .profile-card {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="profile-card">
+    <h2>ဘဒ္ဒန္တခေမိယ ၏ ကိုယ်ရေးရာဇဝင်အကျဉ်း</h2>
+    
+    <div class="info-section">
+        <div class="info-row">
+            <div class="label">ဘွဲ့တော်</div>
+            <div class="value">ဘဒ္ဒန္တမေမိယ</div>
+        </div>
+
+        <div class="info-row">
+            <div class="label">သက်တော် / ဝါတော်</div>
+            <div class="value">၅၁ နှစ် / ၃၁ ဝါ</div>
+        </div>
+
+        <div class="info-row">
+            <div class="label">မွေးသက္ကရာဇ်</div>
+            <div class="value">၁၁.၉.၁၉၇၅ (ကြာသပတေးနေ့)</div>
+        </div>
+
+        <div class="info-row">
+            <div class="label">သာသနာဝင်အမှတ်</div>
+            <div class="value">၉/မဟမ(သ)၀၀၀၉၈၂</div>
+        </div>
+
+        <div class="info-row">
+            <div class="label">မိဘအမည်</div>
+            <div class="value">ခမည်းတော် ဦးစိန်ဝင်း၊ မယ်တော် ဒေါ်မြခင်</div>
+        </div>
+
+        <div class="info-row">
+            <div class="label">ဖွားရာဇာတိ</div>
+            <div class="value">ကျီးကန်ရွာ၊ နွားထိုးကြီးမြို့နယ်၊ မန္တလေးတိုင်းဒေသကြီး</div>
+        </div>
+
+        <div class="info-row">
+            <div class="label">ပညာအရည်အချင်း</div>
+            <div class="value">သာသနဓဇဓမ္မာစရိယ၊ ပဓာနနာယကဆရာတော်</div>
+        </div>
+
+        <div class="info-row">
+            <div class="label">ယခုသီတင်းသုံးရာဌာန</div>
+            <div class="value">အောင်ဇမ္ဗူထွန်းကျောင်းတိုက်၊ (၆/၁၀) ရပ်ကွက်၊ ရွှေပြည်သာမြို့နယ်၊ ရန်ကုန်တိုင်းဒေသကြီး</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        သာသနာတော်၌ အစဉ်ထာဝရ တည်တံ့ပါစေသတည်း။
+    </div>
+</div>
+
+</body>
+</html>
