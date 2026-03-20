@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ဘဒ္ဒန္တမေဓိယ ၏ ကိုယ်ရေးရာဇဝင်အကျဉ်း</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pyidaungsu:wght@400;700&display=swap');
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Pyidaungsu', serif;
+            background-color: #f4eee1; /* ပိုပြီးတည်ငြိမ်သော အသားရောင် */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* ပင်မကတ်ပြား */
+        .profile-card {
+            background: #ffffff;
+            padding: 50px 40px;
+            border-radius: 15px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+            max-width: 650px;
+            width: 100%;
+            border: 2px solid #d4af37;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* နောက်ခံ ဓမ္မစက် Watermark */
+        .profile-card::after {
+            content: "☸";
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 400px;
+            color: rgba(212, 175, 55, 0.05);
+            z-index: 1;
+        }
+
+        /* ဆရာတော် ဓာတ်ပုံနေရာ */
+        .photo-section {
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .photo-section img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #d4af37;
+            padding: 5px;
+            background: #fff;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+            color: #4a0e0e;
+            font-size: 1.6rem;
+            margin-bottom: 30px;
+            border-bottom: 2px double #d4af37;
+            padding-bottom: 15px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .info-section {
+            position: relative;
+            z-index: 2;
+        }
+
+        .info-row {
+            display: flex;
+            border-bottom: 1px solid #eee;
+            padding: 15px 0;
+        }
+
+        .info-row:last-child {
+            border-bottom: none;
+        }
+
+        .label {
+            width: 180px;
+            font-weight: 700;
+            color: #5d4037;
+            font-size: 1.05rem;
+        }
+
+        .value {
+            flex: 1;
+            color: #222;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 1rem;
+            color: #5d4037;
+            font-weight: 700;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* ထောင့်ပန်းကနုတ် (Corner Ornaments) */
+        .corner {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border: 3px solid #d4af37;
+            z-index: 2;
+        }
+        .top-left { top: 15px; left: 15px; border-right: none; border-bottom: none; }
+        .top-right { top: 15px; right: 15px; border-left: none; border-bottom: none; }
+        .bottom-left { bottom: 15px; left: 15px; border-right: none; border-top: none; }
+        .bottom-right { bottom: 15px; right: 15px; border-left: none; border-top: none; }
+
+        @media (max-width: 550px) {
+            .info-row { flex-direction: column; }
+            .label { width: 100%; color: #d4af37; margin-bottom: 5px; }
+            .profile-card { padding: 30px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="profile-card">
+    <div class="corner top-left"></div>
+    <div class="corner top-right"></div>
+    <div class="corner bottom-left"></div>
+    <div class="corner bottom-right"></div>
+
+    <div class="photo-section">
+        <img src="sayadaw.jpg" alt="ဘဒ္ဒန္တမေဓိယ">
+    </div>
+
+    <h2>ဘဒ္ဒန္တမေဓိယ ၏ ကိုယ်ရေးရာဇဝင်အကျဉ်း</h2>
+    
+    <div class="info-section">
+        <div class="info-row">
+            <div class="label">ဘွဲ့တော်</div>
+            <div class="value">ဘဒ္ဒန္တမေဓိယ</div>
+        </div>
+
+        <div class="info-row">
+            <div class="label">သက်တော် / ဝါတော်</div>
+            <div class="value">၅၁ နှစ် / ၃၁ ဝါ</div>
+        </div>
+
+        <div class="info-row">
+            <div class="label">မွေးသက္ကရာဇ်</div>
+            <div class="value">၁၁.၉.၁၉၇၅ (ကြာသပတေးနေ့)</div>
+        </div>
+
+        <div class="info-row">
+            <div class="label">သာသနာဝင်အမှတ်</div>
+            <div class="value">၉/မဟမ(သ)၀၀၀၉၈၂</div>
+        </div>
+
+        <div class="info-row">
+            <div class="label">မိဘအမည်</div>
+            <div class="value">ခမည်းတော် ဦးစိန်ဝင်း၊ မယ်တော် ဒေါ်မြခင်</div>
+        </div>
+
+        <div class="info-row">
+            <div class="label">ဖွားရာဇာတိ</div>
+            <div class="value">ကျီးကန်ရွာ၊ နွားထိုးကြီးမြို့နယ်၊ မန္တလေးတိုင်းဒေသကြီး</div>
+        </div>
+
+        <div class="info-row">
+            <div class="label">ပညာအရည်အချင်း</div>
+            <div class="value">ဓမ္မာစရိယ၊ ပဓာနနာယကဆရာတော်</div>
+        </div>
+
+        <div class="info-row">
+            <div class="label">ယခုသီတင်းသုံးရာဌာန</div>
+            <div class="value">အောင်ဇမ္ဗူထွန်းကျောင်းတိုက်၊ (၆/၁၀) ရပ်ကွက်၊ ရွှေပြည်သာမြို့နယ်၊ ရန်ကုန်တိုင်းဒေသကြီး</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        ဗုဒ္ဓသာသနံ  စိရံ  တိဋ္ဌတု။
+    </div>
+</div>
+
+</body>
+</html>
